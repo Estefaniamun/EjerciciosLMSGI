@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fabricante [
+]>
+
+<fabricante>
+    <asus/>
+    <microprocesador></microprocesador>
+    <modelo></modelo>
+    <memoria></memoria>
+    <intel/>
+    <microprocesador></microprocesador>
+    <modelo></modelo>
+    <memoria></memoria>
+</fabricante>

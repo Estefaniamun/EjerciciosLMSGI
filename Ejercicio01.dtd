@@ -1,0 +1,6 @@
+<!ELEMENT fabricante ((asus | intel)* , microprocesador, modelo, memoria)*>
+<!ELEMENT asus EMPTY>
+<!ELEMENT intel EMPTY>
+<!ELEMENT microprocesador (#PCDATA)>
+<!ELEMENT modelo (#PCDATA)>
+<!ELEMENT memoria (#PCDATA)>
