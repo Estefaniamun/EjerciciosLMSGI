@@ -4,11 +4,11 @@
 
 <fabricante>
     <asus/>
-    <microprocesador></microprocesador>
-    <modelo></modelo>
-    <memoria></memoria>
+    <microprocesador>AMD</microprocesador>
+    <modelo>AMD Ryzen 9</modelo>
+    <memoria>16 GB</memoria>
     <intel/>
-    <microprocesador></microprocesador>
-    <modelo></modelo>
-    <memoria></memoria>
+    <microprocesador>Intel</microprocesador>
+    <modelo>Intel 80186</modelo>
+    <memoria>8 GB</memoria>
 </fabricante>
