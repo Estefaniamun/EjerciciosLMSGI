@@ -1,0 +1,19 @@
+<!--Declaramos la estructura-->
+<!ELEMENT musica (artistas, canciones, nacionalidades)*>
+<!ELEMENT artistas (artista)*>
+<!ELEMENT canciones (cancion)*>
+<!ELEMENT nacionalidades (nacionalidad)*>
+
+<!--Declaramos los elementos-->
+<!ELEMENT artista (#PCDATA)>
+<!ELEMENT cancion (#PCDATA)>
+<!ELEMENT nacionalidad (#PCDATA)>
+
+<!--Declaramos los atributos-->
+<!ATTLIST artista nombre ID #REQUIRED
+                    fechaNacimiento CDATA #REQUIRED
+                    nacionalidad IDREF #REQUIRED>
+<!ATTLIST cancion nombre NMTOKENS #REQUIRED
+                    duracion CDATA #REQUIRED
+                    artista IDREF #REQUIRED>
+<!ATTLIST nacionalidad codigo ID #REQUIRED>

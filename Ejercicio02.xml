@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE musica SYSTEM "Ejercicio02.dtd">
+
+
+<musica>
+    <artistas>
+        <artista nombre="ArianaGrande" fechaNacimiento="1993" nacionalidad="USA"/>
+        <artista nombre="JustinBieber" fechaNacimiento="1994" nacionalidad="CAN"/>
+    </artistas>
+    <canciones>
+        <cancion nombre="Positions" duracion="2:52" artista="ArianaGrande"/>
+        <cancion nombre="HoldOn" duracion="2:50" artista="JustinBieber"/>
+    </canciones>
+    <nacionalidades>
+        <nacionalidad codigo="USA">Estadounidense</nacionalidad>
+        <nacionalidad codigo="CAN">Canadiense</nacionalidad>
+    </nacionalidades>
+</musica>
