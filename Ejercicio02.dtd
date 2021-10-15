@@ -13,7 +13,7 @@
 <!ATTLIST artista nombre ID #REQUIRED
                     fechaNacimiento CDATA #REQUIRED
                     nacionalidad IDREF #REQUIRED>
-<!ATTLIST cancion nombre NMTOKENS #REQUIRED
+<!ATTLIST cancion nombre CDATA #REQUIRED
                     duracion CDATA #REQUIRED
                     artista IDREF #REQUIRED>
 <!ATTLIST nacionalidad codigo ID #REQUIRED>
