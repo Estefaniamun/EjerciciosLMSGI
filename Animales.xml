@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Animales [
+
+<!ELEMENT Animales (animal, pelaje, (hembra | macho), especie, edadMaxima, ubicacion)*>
+
+<!ELEMENT animal (#PCDATA)>
+<!ELEMENT pelaje (#PCDATA)>
+<!ELEMENT hembra (#PCDATA)>
+<!ELEMENT macho (#PCDATA)>
+<!ELEMENT especie (#PCDATA)>
+<!ELEMENT edadMaxima (#PCDATA)>
+<!ELEMENT ubicacion (#PCDATA)>
+
+<!ATTLIST animal nombre CDATA
+                familia CDATA
+                
+]>
+<!ATTLIST pelaje nombre CDATA  
+                tipo 
+                color ID
+]>
+
+
+
+<Animales>
+    <animal>
+
+    </animal>
+    <pelaje>
+
+    </pelaje>
+    <hembra></hembra>
+    <macho></macho>
+    <especie></especie>
+    <edadMaxima></edadMaxima>
+    <ubicacion></ubicacion>
+
+</Animales>
