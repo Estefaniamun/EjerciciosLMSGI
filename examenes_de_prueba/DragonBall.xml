@@ -1,2 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE fabricante SYSTEM "DragonBall.dtd">
+<!DOCTYPE DragonBall SYSTEM "DragonBall.dtd">
+
+<DragonBall>
+    <personaje nombre="Goku" transformacion="mono">
+        <pelo color="negro" transformacion="mono"></pelo>
+        <familia nombre="Son"></familia>
+        <edad></edad>
+        <hijos></hijos>
+        <vida></vida>
+        <enemigo></enemigo>
+    </personaje>
+
+</DragonBall>

@@ -1,0 +1,20 @@
+<!ELEMENT DragonBall (personaje)*>
+<!ELEMENT personaje (pelo, familia, edad, (hijos)?, vida, enemigo)*>
+<!ELEMENT pelo (#PCDATA)>
+<!ELEMENT familia (#PCDATA)>
+<!ELEMENT edad (#PCDATA)>
+<!ELEMENT hijos (#PCDATA)>
+<!ELEMENT vida (#PCDATA | vivo | muerto)*>
+<!ELEMENT enemigo (#PCDATA)>
+
+
+
+<!ATTLIST personaje nombre CDATA #REQUIRED
+                    transformacion ID #IMPLIED
+>
+
+<!ATTLIST pelo color ID #REQUIRED
+                transformacion IDREF #IMPLIED
+>
+
+<!ATTLIST familia nombre CDATA #REQUIRED>
