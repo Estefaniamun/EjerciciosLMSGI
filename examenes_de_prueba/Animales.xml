@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Animales [
-
-<!ELEMENT Animales (animal, (pelaje)?, (hembra | macho)+, especie, edadMaxima, ubicacion, vida , vivo, muerto)*>
+<!ELEMENT Animales (animal)*>
 
 <!ELEMENT animal ((pelaje)?, (hembra | macho)+ , especie, edadMaxima, ubicacion, vida)*>
 <!ELEMENT pelaje (#PCDATA)>
@@ -33,7 +32,8 @@
 <!ATTLIST ubicacion zona CDATA #REQUIRED
                     zonacaza IDREFS #REQUIRED
 ]>
-<!ENTITY animal "Animal Salvaje">
+<!ENTITY marvel "Animal Salvaje">
+]>
 
 <Animales>
     <animal  nombre = "León" familia = "Felidae"  tamaño = "2,1m" alimentación = "">
