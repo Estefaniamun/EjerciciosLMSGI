@@ -1,38 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Animales [
 
-<!ELEMENT Animales (animal, pelaje, (hembra | macho), especie, edadMaxima, ubicacion)*>
+<!ELEMENT Animales (animal, (pelaje)?, (hembra | macho)+, especie, edadMaxima, ubicacion, vida , vivo, muerto)*>
 
-<!ELEMENT animal (#PCDATA)>
+<!ELEMENT animal ((pelaje)?, (hembra | macho)+ , especie, edadMaxima, ubicacion, vida)*>
 <!ELEMENT pelaje (#PCDATA)>
 <!ELEMENT hembra (#PCDATA)>
 <!ELEMENT macho (#PCDATA)>
-<!ELEMENT especie (#PCDATA)>
+<!ELEMENT especie EMPTY>
 <!ELEMENT edadMaxima (#PCDATA)>
-<!ELEMENT ubicacion (#PCDATA)>
+<!ELEMENT ubicacion EMPTY>
+<!ELEMENT vida (#PCDATA | vivo | muerto)*>
+<!ELEMENT vivo EMPTY>
+<!ELEMENT muerto EMPTY> 
 
-<!ATTLIST animal nombre CDATA
-                familia CDATA
+<!ATTLIST animal nombre CDATA  
+                familia CDATA #IMPLIED
+                tamaño CDATA #REQUIRED
+                alimentacion CDATA #FIXED "carnívora"
                 
 ]>
-<!ATTLIST pelaje nombre CDATA  
-                tipo 
-                color ID
+<!ATTLIST pelaje nombre CDATA  #IMPLIED
+                tipo #IMPLIED
+                color ID #REQUIRED
 ]>
-
-
+<!ATTLIST especie nombre CDATA #REQUIRED
+                    antepasados CDATA #IMPLIED
+                    color IDREF #REQUIRED
+                    claseS CDATA #IMPLIED
+                    zonacaza ID #FIXED
+]>
+<!ATTLIST ubicacion zona CDATA #REQUIRED
+                    zonacaza IDREFS #REQUIRED
+]>
+<!ENTITY animal "Animal Salvaje">
 
 <Animales>
-    <animal>
+    <animal  nombre = "León" familia = "Felidae"  tamaño = "2,1m" alimentación = "">
+        León es un &animal;
+        <macho/>
 
-    </animal>
-    <pelaje>
+    
+    <pelaje tipo = "suave" color = "#BC8648" >
 
     </pelaje>
-    <hembra></hembra>
-    <macho></macho>
-    <especie></especie>
-    <edadMaxima></edadMaxima>
-    <ubicacion></ubicacion>
+    <especie  nombre = "Panthera leo" antepasados = "León de las cavernas" color = "#BC8648" clase = "Mamíferos" zonacaza = "llanura" ></especie>
+    <edadMaxima> 30 años</edadMaxima>
+    <ubicacion zona = "Las sabanas de África" zonacaza = "llanura"></ubicacion>
+    <vida>
+        <vivo/>
+    </vida>
+    </animal>
+
+    <animal  nombre = "Serpiente" familia = "Serpentes"  tamaño = "1,5m" alimentación = "">
+       La serpiente es un &animal;
+        <hembra/>
+
+    <pelaje tipo = "áspera" color = "#9ACD32" >
+
+    </pelaje>
+    <especie  nombre = "Serpentes" antepasados = "Tetrapodophis amplectus" color = "#9ACD32" clase = "Sauropsida" zonacaza = "zonas despejadas" ></especie>
+    <edadMaxima> Entre 12 a 44 años</edadMaxima>
+    <ubicacion zona = "Distribución geográfica es muy amplia" zonacaza = "zonas despejadas"></ubicacion>
+    <vida>
+       Está viva
+    </vida>
+    </animal>
+
 
 </Animales>
