@@ -14,7 +14,7 @@
 <!ELEMENT muerto EMPTY> 
 
 <!ATTLIST animal nombre CDATA  
-                familia CDATA #IMPLIED
+                familia NMTOKEN #IMPLIED
                 tamaño CDATA #REQUIRED
                 alimentacion CDATA #FIXED "carnívora"
                 
@@ -37,7 +37,7 @@
 
 <Animales>
     <animal  nombre = "León" familia = "Felidae"  tamaño = "2,1m" alimentación = "">
-        León es un &animal;
+     <!--   León es un &animal;-->
         <macho/>
 
     
@@ -53,7 +53,7 @@
     </animal>
 
     <animal  nombre = "Serpiente" familia = "Serpentes"  tamaño = "1,5m" alimentación = "">
-       La serpiente es un &animal;
+      <!-- La serpiente es un &animal;-->
         <hembra/>
 
     <pelaje tipo = "áspera" color = "#9ACD32" >
