@@ -2,13 +2,13 @@
 <!DOCTYPE DragonBall SYSTEM "DragonBall.dtd">
 
 <DragonBall>
-    <personaje nombre="Goku" transformacion="mono">
-        <pelo color="negro" transformacion="mono"></pelo>
-        <familia nombre="Son"></familia>
-        <edad></edad>
-        <hijos></hijos>
-        <vida></vida>
-        <enemigo></enemigo>
-    </personaje>
-
+    <personaje>
+    <Goku nombre="Son Goku" transformacion="mono">
+     </Goku>
+     <Pan></Pan>
+     <Vegeta></Vegeta>
+     <Trunks></Trunks>
+     <Freezer></Freezer>
+     <ChiChi></ChiChi>
+</personaje>
 </DragonBall>
