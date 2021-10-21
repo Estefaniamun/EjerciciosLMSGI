@@ -3,12 +3,21 @@
 
 <DragonBall>
     <personaje>
-    <Goku nombre="Son Goku" transformacion="mono">
-     </Goku>
-     <Pan></Pan>
-     <Vegeta></Vegeta>
-     <Trunks></Trunks>
-     <Freezer></Freezer>
-     <ChiChi></ChiChi>
+    <Goku nombre="SonGoku" principal = "P1" pelo="negro" vida="vivo" >Son Goku</Goku>
+     <Pan nombre ="Pan" principal="P2" pelo="negro" vida="vivo">Pan</Pan>
+     <Vegeta nombre="Vegeta" principal="P3" pelo="negro" vida="vivo">Vegeta</Vegeta>
+     <Krillin nombre="Krillin" principal="P5" familia="Androide18" hijos="Hija1">Krillin</Krillin> 
+     <Trunks nombre="Trunks" principal="P4" estado="presente">Trunks</Trunks>
+    <Freezer nombre="Freezer" principal="P6" vida="muerto"></Freezer>
+    <ChiChi nombre="ChiChi" principal="P7" marido="Son"></ChiChi>
 </personaje>
+<familia papel ="P1" nombre="Son"></familia>
+<familia papel ="P2" nombre="SonPan"></familia>
+<familia papel ="P3" nombre="PrincipeVegeta"></familia>
+<familia papel ="P5" nombre="Androide18"></familia>
+<familia papel ="P4" nombre="PrincipeTrunks"></familia>
+<familia papel ="P6" nombre="Freezer"></familia>
+<familia papel ="P7" nombre="SonChichi"></familia>
+
+
 </DragonBall>

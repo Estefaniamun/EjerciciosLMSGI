@@ -1,5 +1,7 @@
-<!ELEMENT DragonBall (personaje)*>
+<!--Declaramos la esctructura de los elementos-->
+<!ELEMENT DragonBall (personaje*, familia*)*>
 <!ELEMENT personaje (Goku, Pan, Vegeta, (Krillin)?, Trunks, Freezer, (ChiChi)+)*>
+<!ELEMENT familia (#PCDATA)>
 <!ELEMENT Goku (#PCDATA)>
 <!ELEMENT Pan (#PCDATA)>
 <!ELEMENT Vegeta (#PCDATA)>
@@ -7,15 +9,34 @@
 <!ELEMENT Trunks (#PCDATA)>
 <!ELEMENT Freezer (#PCDATA)>
 <!ELEMENT ChiChi (#PCDATA)>
-
-
-
-
-<!ATTLIST Goku nombre CDATA #REQUIRED
-                    transformacion ID #IMPLIED
->
-
-<!ATTLIST Pan 
->
-
-<!ATTLIST Vegeta >
+<!--Declaramos una entidad parámetro-->
+<!ENTITY % caracteristicas "nombre CDATA #REQUIRED  principal ID #REQUIRED">
+<!-- Declaramos los atributos de los elementos incluyendo la entidad parámetro-->
+<!-- Los atributos de Goku-->
+<!ATTLIST Goku  %caracteristicas;> 
+<!ATTLIST Goku pelo CDATA #FIXED "negro"
+                 vida (vivo | muerto) "vivo" >
+<!-- Los atributos de Pan-->
+ <!ATTLIST Pan  %caracteristicas;> 
+<!ATTLIST Pan pelo CDATA #FIXED "negro"
+                 vida (vivo | muerto) "vivo" >
+<!-- Los atributos de Vegeta-->
+ <!ATTLIST Vegeta  %caracteristicas;> 
+ <!ATTLIST Vegeta pelo CDATA #FIXED "negro"
+                     vida (vivo | muerto) "vivo" >
+<!-- Los atributos de Krillin-->
+<!ATTLIST Krillin  %caracteristicas;> 
+<!ATTLIST Krillin hijos ID #IMPLIED
+                    familia IDREF #REQUIRED>
+ <!-- Los atributos de Trunks-->
+<!ATTLIST Trunks  %caracteristicas;> 
+<!ATTLIST Trunks estado (presente | futuro) "presente">
+<!-- Los atributos de Freezer-->
+<!ATTLIST Freezer  %caracteristicas;> 
+<!ATTLIST Freezer vida (vivo | muerto) "vivo">
+<!-- Los atributos de ChiChi-->
+<!ATTLIST ChiChi  %caracteristicas;> 
+<!ATTLIST ChiChi marido IDREF #IMPLIED>
+<!-- Los atributos de familia-->
+<!ATTLIST familia papel IDREF #REQUIRED
+                   nombre ID #REQUIRED >
