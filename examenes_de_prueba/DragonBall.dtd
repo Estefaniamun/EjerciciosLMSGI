@@ -10,7 +10,7 @@
 <!ELEMENT Freezer (#PCDATA)>
 <!ELEMENT ChiChi (#PCDATA)>
 <!--Declaramos una entidad parámetro-->
-<!ENTITY % caracteristicas "nombre CDATA #REQUIRED  principal ID #REQUIRED">
+<!ENTITY % caracteristicas "nombre ID #REQUIRED  principal ID #REQUIRED">
 <!-- Declaramos los atributos de los elementos incluyendo la entidad parámetro-->
 <!-- Los atributos de Goku-->
 <!ATTLIST Goku  %caracteristicas;> 
@@ -39,4 +39,6 @@
 <!ATTLIST ChiChi marido IDREF #IMPLIED>
 <!-- Los atributos de familia-->
 <!ATTLIST familia papel IDREF #REQUIRED
-                   nombre ID #REQUIRED >
+                   nombre ID #REQUIRED 
+                   personajes IDREFS #IMPLIED
+                   >
