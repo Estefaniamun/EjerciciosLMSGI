@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE DragonBall SYSTEM "DragonBall.dtd">
 
-<DragonBall>
+<DragonBall> Los personajes y la familia del anime DragonBall
     <personaje>
     <Goku nombre="SonGoku" principal = "P1" pelo="negro" vida="vivo" >Son Goku</Goku>
      <Pan nombre ="Pan" principal="P2" pelo="negro" vida="vivo">Pan</Pan>

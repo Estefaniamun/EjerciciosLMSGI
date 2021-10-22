@@ -1,5 +1,5 @@
 <!--Declaramos la esctructura de los elementos-->
-<!ELEMENT DragonBall (personaje*, familia*)*>
+<!ELEMENT DragonBall (#PCDATA |personaje | familia)*>
 <!ELEMENT personaje (Goku, Pan, Vegeta, (Krillin)?, Trunks, Freezer, (ChiChi)+)*>
 <!ELEMENT familia (#PCDATA)>
 <!ELEMENT Goku (#PCDATA)>
