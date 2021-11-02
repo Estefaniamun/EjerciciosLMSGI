@@ -1,0 +1,32 @@
+<!--Declaracion de elementos y su estructura-->
+<!ELEMENT electrodomesticos (#PCDATA | electrodomestico | cocina)*>
+<!ELEMENT electrodomestico (nevera, horno, microondas, lavadora+, congelador?)*>
+<!ELEMENT nevera (#PCDATA)>
+<!ELEMENT horno (#PCDATA)>
+<!ELEMENT microondas (#PCDATA)>
+<!ELEMENT lavadora (#PCDATA)>
+<!ELEMENT congelador EMPTY>
+<!ELEMENT cocina (amplia?, (reformada | noreformada))*>
+<!ELEMENT reformada EMPTY>
+<!ELEMENT noreformada EMPTY>
+<!ELEMENT amplia EMPTY>
+<!--Declaracion de la entidad parametro-->
+<!ENTITY % caracteristicas "codigo ID #REQUIRED marca ID #REQUIRED  peso CDATA #REQUIRED">
+<!-- Declaracion de los atributos incluyendo la entidad parametro-->
+
+<!ATTLIST nevera %caracteristicas;
+                    nivelcongelador ID #IMPLIED>
+
+<!ATTLIST horno %caracteristicas;>
+
+<!ATTLIST microondas %caracteristicas;>
+<!ATTLIST lavadora %caracteristicas;
+                    kilos CDATA #FIXED "8KG">
+
+<!ATTLIST congelador %caracteristicas;
+                        niveles IDREF #REQUIRED>
+
+
+<!ATTLIST cocina electrodomestico CDATA #REQUIRED
+                    codigo IDREFS #REQUIRED
+                    estilo (moderna | vintage) "moderna">

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE electrodomesticos SYSTEM "electrodomesticos.dtd">
+<electrodomesticos> Electrodomesticos Actuales
+    <electrodomestico>
+        <nevera  codigo="NSsiemens" marca="siemens" peso="50KG" nivelcongelador="N5">Frigorifico</nevera>
+        <horno codigo="HAasus" marca="asus" peso="30KG">Horno pequeño</horno>
+        <microondas codigo="MSsamsung" marca="samsung" peso="20KG" >Microondas incorporado en el mueble</microondas>
+        <lavadora codigo="LLG" marca="LG" peso="50KG" kilos="8KG">Lavadora moderna</lavadora>
+        <congelador codigo="CFM" marca="FM" peso="50KG" niveles="N5"></congelador>
+    </electrodomestico>
+    <cocina electrodomestico="nevera" codigo="NSsiemens" estilo="moderna">
+        <amplia />
+        <reformada />
+    </cocina>
+    <cocina electrodomestico="microondas" codigo="MSsamsung" estilo="moderna">
+        <amplia />
+       <reformada /> 
+    </cocina>
+    <cocina electrodomestico="horno" codigo="HAasus" estilo="vintage">
+        <noreformada />
+    </cocina>
+     <cocina electrodomestico="lavadora" codigo="LLG" estilo="moderna">
+         <amplia />
+         <noreformada />
+     </cocina>
+
+</electrodomesticos>
