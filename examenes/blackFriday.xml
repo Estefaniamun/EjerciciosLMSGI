@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ofertasBlackFriday xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="blackFriday.xsd">
+    <!-- Pueden existir muchos elementos de tipo "articulo" -->
+    <articulo codigo="Canon 33-53">Cámara IP de vigilancia de exteriores
+        <fabricante><canon/></fabricante>
+        <oferta precioHabitual="69" descuento="10%">61.10</oferta>
+        <valoraciones>
+            <positiva>
+                <autor>Pedro</autor>
+                <texto>Es una cámara estupendísima!!!!</texto>
+            </positiva>
+            <negativa>
+                <autor>Araceli</autor>
+                <texto>A mí me ha decepcionado mucho, pixela bastante con poca luz</texto>
+            </negativa>
+            <masVotada votosFavorables="50" votosDesfavorables="3">
+                <autor>Javier</autor>
+                <texto>A mí me gusta, el logotipo que trae me recuerda a un pokemon</texto>
+                <fecha>11/11/2018 04:54:03 PM</fecha>
+            </masVotada>
+        </valoraciones>
+        <preguntas>
+            <pregunta>
+                <autor>Inma</autor>
+                <texto>¿Se puede conectar por PPPE?</texto>
+                <respuestas>
+                    <respuesta autor="Estela">Sí, sin problema
+                        <votantesEnPositivo>Pedro Araceli Lucía Álvaro</votantesEnPositivo>
+                        <votantesEnNegativo>Silvia Javier Inma Gonzalo</votantesEnNegativo>
+                    </respuesta>
+                </respuestas>
+            </pregunta>
+        </preguntas>
+        <agregadoACestaDeCompra value="Sí">lunes 30 de octubre de 2018</agregadoACestaDeCompra>
+    </articulo>
+</ofertasBlackFriday>

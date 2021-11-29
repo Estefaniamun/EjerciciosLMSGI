@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="ofertasBlackFriday" type="tipoOfertas"></xs:element>
+
+<!-- Tipo Ofertas-->
+<xs:complexType name="tipoOfertas">
+    <xs:sequence>
+        <xs:element name="articulo" type="tipoArticulo"></xs:element>
+    </xs:sequence>
+</xs:complexType>
+
+<!-- Tipo Articulo con sus subelementos y su atributo-->
+<xs:complexType name="tipoArticulo" mixed="true">
+    <xs:sequence>
+        <xs:element name="fabricante" type="tipoFabricante"></xs:element>
+        <xs:element name="oferta" type="tipoOferta"></xs:element>
+        <xs:element name="valoraciones" type="tipoValoraciones"></xs:element>
+        <xs:element name="preguntas" type="tipoPreguntas"></xs:element>
+        <xs:element name="agregadoACestaDeCompra" type="tipoDerivadoDeAgregado"></xs:element>
+    </xs:sequence>
+    <xs:attribute name="codigo" type="xs:string"></xs:attribute>
+</xs:complexType>
+
+<!-- TipoFabricante con sus subelementos a elegir uno-->
+<xs:complexType name="tipoFabricante">
+    <xs:choice>
+        <xs:element name="canon"></xs:element>
+        <xs:element name="epson"></xs:element>
+        <xs:element name="samsung"></xs:element>
+        <xs:element name="apple"></xs:element>
+        <xs:element name="philips"></xs:element>
+    </xs:choice>
+</xs:complexType>
+
+<!-- Tipo Oferta que es mixto con atributos-->
+<xs:complexType name="tipoOferta" mixed="true">
+    <xs:attribute name="precioHabitual" type="tipoPrecio"></xs:attribute>
+    <xs:attribute name="descuento" type="tipoDescuento"></xs:attribute>
+</xs:complexType>
+
+<!-- Tipo Precio que es un simpleType con un patrón de 2 dígitos-->
+<xs:simpleType name="tipoPrecio">
+    <xs:restriction base="xs:integer">
+        <xs:pattern value="\d{2}"></xs:pattern>
+    </xs:restriction>
+</xs:simpleType>
+<!-- Tipo Descuento con patrón de 2 dígitos y el %-->
+<xs:simpleType name="tipoDescuento">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="\d{2}%"></xs:pattern>
+    </xs:restriction>
+</xs:simpleType>
+
+<!-- Tipo Valoraciones con sus subelementos que aparecen como máximo 1-->
+<xs:complexType name="tipoValoraciones">
+    <xs:all>
+        <xs:element name="positiva" type="tipoPositiva"></xs:element>
+        <xs:element name="negativa" type="tipoNegativa"></xs:element>
+        <xs:element name="masVotada" type="tipoMasVotada"></xs:element>
+    </xs:all>
+</xs:complexType>
+
+<!-- Tipo Positiva con sus subelementos en secuencia para seguir un orden y es mixto para poder tener derivaciones de él-->
+<xs:complexType name="tipoPositiva" mixed="true">
+    <xs:sequence>
+        <xs:element name="autor" type="unionNombres"></xs:element>
+        <xs:element name="texto" type="xs:string"></xs:element>
+    </xs:sequence>
+</xs:complexType>
+<!-- Tipo Negativa con sus subelementos en secuencia-->
+<xs:complexType name="tipoNegativa" mixed="true">
+    <xs:sequence>
+        <xs:element name="autor" type="unionNombres"></xs:element>
+        <xs:element name="texto" type="xs:string"></xs:element>
+    </xs:sequence>
+</xs:complexType>
+
+<!-- Tipo MasVotada que es una derivación de Tipo Positiva agregandole un elemento y atributos-->
+<xs:complexType name="tipoMasVotada">
+    <xs:complexContent mixed="true">
+        <xs:extension base="tipoPositiva">
+            <xs:sequence>
+                <xs:element name="fecha" type="tipoFecha"></xs:element>
+            </xs:sequence>
+            <xs:attribute name="votosFavorables" type="xs:integer"></xs:attribute>
+            <xs:attribute name="votosDesfavorables" type="xs:integer"></xs:attribute>
+        </xs:extension>
+    </xs:complexContent>
+</xs:complexType>
+
+<!-- Tipo Fecha es un simpleType con un patrón de dígitos separados por / y los otros por : seguido de la opción AM o PM-->
+<xs:simpleType name="tipoFecha">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="\d{2}/\d{2}/\d{4} \d{2}:\d{2}:\d{2} (AM|PM)"></xs:pattern>
+    </xs:restriction>
+</xs:simpleType>
+
+<!-- Tipo Preguntas con un solo subelemento por eso obtamos por xs:all-->
+<xs:complexType name="tipoPreguntas">
+    <xs:all>
+        <xs:element name="pregunta" type="tipoPregunta"></xs:element>
+    </xs:all>
+</xs:complexType>
+
+<!-- Tipo Pregunta es una derivación de Tipo Negativa agregandole un elemento -->
+<xs:complexType name="tipoPregunta">
+    <xs:complexContent mixed="true">
+        <xs:extension base="tipoNegativa">
+            <xs:sequence>
+                <xs:element name="respuestas" type="tipoRespuestas"></xs:element>
+            </xs:sequence>
+        </xs:extension>
+    </xs:complexContent>
+</xs:complexType>
+
+
+<!-- Tipo Respuestas con su único subelemento -->
+<xs:complexType name="tipoRespuestas">
+    <xs:all>
+        <xs:element name="respuesta" type="tipoRespuesta"></xs:element>
+    </xs:all>
+</xs:complexType>
+
+<!-- Tipo Respuesta con sus subelementos que aparecen con un máx de 1 y un atributo-->
+<xs:complexType name="tipoRespuesta" mixed="true">
+    <xs:all>
+        <xs:element name="votantesEnPositivo" type="listaNombres"></xs:element>
+        <xs:element name="votantesEnNegativo" type="listaNombres"></xs:element>
+    </xs:all>
+    <xs:attribute name="autor" type="unionNombres"></xs:attribute>
+</xs:complexType>
+
+
+<!-- Tipo DerivadoAgregado es una derivación del simpleType TipoAgregado agregandole un atributo-->
+<xs:complexType name="tipoDerivadoDeAgregado">
+    <xs:simpleContent>
+        <xs:extension base="tipoAgregado">
+            <xs:attribute name="value"></xs:attribute>
+        </xs:extension>
+    </xs:simpleContent>
+</xs:complexType>
+
+<!-- Tipo Agregado es un simpleType con un patrón de los días de la semana(opciones) seguido de 2 dígitos "de" los meses del año(opciones) "de" seguido de 4 dígitos-->
+<xs:simpleType name="tipoAgregado">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="(lunes|martes|miercoles|jueves|viernes|sabado|domingo) \d{1,2} de (enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre) de \d{4}"></xs:pattern>
+    </xs:restriction>
+</xs:simpleType>
+
+
+
+
+
+<!-- nombresMasculinos con una serie de nombres en masculino-->
+
+<xs:simpleType name="nombresMasculinos">
+    <xs:restriction base="xs:string">
+        <xs:enumeration value="Pedro"></xs:enumeration>
+        <xs:enumeration value="Álvaro"></xs:enumeration>
+        <xs:enumeration value="Javier"></xs:enumeration>
+        <xs:enumeration value="Gonzalo"></xs:enumeration>
+    </xs:restriction>
+</xs:simpleType>
+
+<!-- nombresFemeninos con una serie de nombres en femenino-->
+<xs:simpleType name="nombresFemeninos">
+    <xs:restriction base="xs:string">
+        <xs:enumeration value="Araceli"></xs:enumeration>
+        <xs:enumeration value="Lucía"></xs:enumeration>
+        <xs:enumeration value="Silvia"></xs:enumeration>
+        <xs:enumeration value="Inma"></xs:enumeration>
+        <xs:enumeration value="Estela"></xs:enumeration>
+    </xs:restriction>
+</xs:simpleType>
+
+<!-- unionNombres con la unión de los dos simpleType nombresMasculinos y nombresFemeninos-->
+<xs:simpleType name="unionNombres">
+    <xs:union memberTypes="nombresMasculinos nombresFemeninos"></xs:union>
+</xs:simpleType>
+
+<!-- Creación de la lista de nombres basada en la union-->
+<xs:simpleType name="listaNombres">
+    <xs:list itemType="unionNombres"></xs:list>
+</xs:simpleType>
+</xs:schema>
