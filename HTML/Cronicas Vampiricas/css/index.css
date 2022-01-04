@@ -15,6 +15,11 @@ body{
     text-align: center;
 }
 
+#h2{
+    margin-top: 20px;
+    display: inline-block;
+    margin-left: 10px; 
+}
 #argumento{
     background-color: lightgrey;
     border-radius: 10px;
@@ -25,6 +30,11 @@ body{
     font-style: oblique;
     text-transform: uppercase;
     text-decoration: underline;
+    padding-left: 20px;
+    border-radius: 10px;
+    background-color: honeydew;
+    width: 200px;
+    color: maroon;
 }
 .p1{
     padding-left: 30px;
@@ -54,11 +64,38 @@ body{
     margin-left: 100px;
 }
 
+#per{
+    margin-top: 20px;
+    display: inline-block;
+    margin-left: 10px;
+}
 .per{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: oblique;
     text-transform: uppercase;
-    text-decoration: underline;
+    text-decoration: none;
+    padding-left: 20px;
+    border-radius: 10px;
+    background-color: honeydew;
+    width: 200px;
+  
+}
+a{
+    text-decoration: none;
+    color: maroon;
+}
+a:hover{
+    text-decoration: none;
+    color: darkslategray;
+    font-size: 1.5em;
+    font-weight: bolder;
+    
+}
+.principales a:hover{
+    text-decoration: none;
+    color: darkslategray;
+    font-size: 1.5em;
+    
 }
 
 .lista{
@@ -68,11 +105,21 @@ body{
     padding-bottom: 30px;
 }
 
+#SpinOff{
+    margin-top: 20px;
+    display: inline-block;
+    margin-left: 10px; 
+}
 .SpinOff{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: oblique;
     text-transform: uppercase;
     text-decoration: underline;
+    padding-left: 20px;
+    border-radius: 10px;
+    background-color: honeydew;
+    width: 200px;
+    color: maroon;
 }
 
 
@@ -104,4 +151,13 @@ body{
     padding-bottom: 30px;
 }
 
+ul li{
+    border-style: double;
+    border-color: lightsteelblue;
+    border-radius: 8px;
+    background-color: mistyrose;
+}
 
+ul li:hover{
+    background-color: oldlace;
+}
