@@ -1,0 +1,107 @@
+body{
+    background: linear-gradient(darkred, red, darkred);
+}
+
+
+#principal{
+    width: 90%;
+    margin: 0 auto;
+}
+
+#encabezado{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    text-align: center;
+}
+
+#argumento{
+    background-color: lightgrey;
+    border-radius: 10px;
+}
+.h{
+    padding-left: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+.p1{
+    padding-left: 30px;
+    text-align: left;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.sp1{
+    font-style: italic;
+    font-weight: bolder;
+    color: rgb(204, 90, 44);
+}
+
+#personajes{
+    background-color: lightgrey;
+    border-radius: 10px;
+}
+
+#SO{
+    background-color: lightgrey;
+    border-radius: 10px;
+}
+
+#formulario{
+    background-color: lightgrey;
+    border-radius: 10px;
+    margin-right: 600px;
+    margin-left: 100px;
+}
+
+.per{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.lista{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left: 30px;
+    text-align: left;
+    padding-bottom: 30px;
+}
+
+.SpinOff{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+
+.fm{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.form{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left: 100px;
+    text-align: left;
+    padding-bottom: 30px;
+  
+}
+.Originales{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left: 30px;
+    text-align: left;
+}
+.Legacies{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left: 30px;
+    text-align: left;
+    padding-bottom: 30px;
+}
+
+

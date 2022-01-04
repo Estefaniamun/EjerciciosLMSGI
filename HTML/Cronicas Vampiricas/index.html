@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="css/index.css" rel="stylesheet" type="text/css" media="all" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cronicas Vampiricas</title>
 </head>
 <body>
+    <div id="principal">
     <div id="encabezado">
         <img src="img/portada.jpg">
     </div>
@@ -14,8 +16,8 @@
 
     <div id="argumento">
         <h2 class="h">Argumento</h2>
-        <p class="p1">La historia se sitúa en el pueblo de <span> Mystic Falls, Virginia.</span> Mientras los protagonistas tratan de sobrevivir a las constantes criaturas y amenazas de diferentes especies, enemigos o antiguos aliados.
-                    La serie presenta diferentes criaturas súper naturales a través vez de sus ocho temporadas, incluyendo <span class="sp2"> Brujas, Hombres Lobos, Doppelgängers, Híbridos, Vampiros Originales, Herejes o Sirenas.</span> </p>
+        <p class="p1">La historia se sitúa en el pueblo de <span class="sp1"> Mystic Falls, Virginia.</span> Mientras los protagonistas tratan de sobrevivir a las constantes criaturas y amenazas de diferentes especies, enemigos o antiguos aliados.
+                    La serie presenta diferentes criaturas súper naturales a través vez de sus ocho temporadas, incluyendo <span class="sp1"> Brujas, Hombres Lobos, Doppelgängers, Híbridos, Vampiros Originales, Herejes o Sirenas.</span> </p>
     </div>
 
     <div id="personajes">
@@ -65,5 +67,63 @@
         <p class="Originales"><a href="theoriginals.html"><span class="OR">The Originals</span></a> es una serie derivada de <span class="VD">The Vampires Diaries</span> creada por Kevin Williamson y Plec. La serie trascurrió desde Octubre de 2013 hasta Agosto de 2018</p>
         <p class="Legacies"><a href="legacies.html"><span class="LE">Legacies</span></a> es una serie derivada de <span class="OR">The Originals</span> y presenta personajes de esa serie y de su predecesora.</p>
     </div>
+
+
+
+    <div id="formulario">
+        <h2 class="fm">Formulario</h2>
+        <form class="form">
+            <p>
+                 <label for="Nombre">Nombre:</label>
+                 <input type="text" name="Nombre" id="Nombre" /> 
+            </p>
+            <p>
+                <label for="email">Correo electrónico:</label>
+                <input name="email" type="email" placeholder="example@gmail.com">  
+            </p>
+            <p>
+                <label for="Contraseña">Contraseña: </label>
+                <input type="password" name="password"/>
+            </p>
+            <p>
+                <label>
+                <input type="radio" name="Sexo" value="1" />
+                    Hombre
+                </label>
+                  <br />
+                <label>
+                <input type="radio" name="Sexo" value="2" />
+                    Mujer
+                </label>
+            </p>
+            <p>
+                <label for="Edad">Edad: </label>
+               <select> 
+                   <option>Menos de 18</option>
+                   <option>Entre 18 y 25</option>
+                   <option>Entre 25 y 30</option>
+                   <option>Más de 30</option>
+               </select>
+            </p>
+            <p>
+                <input type="checkbox" name="checkbox" id="checkbox" />
+                <label for="checkbox">¿Eres amante de las series?</label>
+            </p>
+            <p>
+                <label for="date">Fecha: </label>
+                <input name="date"type="date"> 
+            </p>
+            <p>
+                <label for="Comentario">Comentario: </label>
+                <textarea name="Comentario" cols="20" rows="3" placeholder="Escriba su opinión...">
+                </textarea>
+            </p>
+            <p>
+                <input type="submit" value="Enviar"/>
+                <input type="reset" value="Limpiar"/>
+            </p>
+        </form>
+    </div>
+</div>
 </body>
 </html>
