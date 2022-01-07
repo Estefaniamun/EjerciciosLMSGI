@@ -123,6 +123,7 @@ a:hover{
 }
 
 
+
 .fm{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: oblique;
@@ -134,7 +135,7 @@ a:hover{
 
 .form{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding-left: 100px;
+    padding-left: 20px;
     text-align: left;
     padding-bottom: 30px;
   
@@ -160,4 +161,393 @@ ul li{
 
 ul li:hover{
     background-color: oldlace;
+}
+
+
+.VD{
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.OR{
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+#formulario{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
+    border-radius: 10px;
+    background-color: lightgray;
+   width: 50%;
+    color: maroon;
+}
+
+
+input[type=text]{
+    border-radius: 5px;
+   
+}
+input[type=text]:hover{
+    background-color: lightslategray;
+    color: white;
+    font-weight: bolder;
+}
+
+
+input[type=email]{
+    border-radius: 5px;
+}
+
+input[type=email]:hover{
+    background-color: lightslategray;
+    color: white;
+    font-weight: bolder;
+}
+
+input[type=password]{
+    border-radius: 5px;
+}
+
+input[type=password]:hover{
+    background-color: lightslategray;
+    color: white;
+    font-weight: bolder;
+}
+
+
+input[type=radio]{
+    border-radius: 5px;
+}
+
+
+input[type=radio]:hover{
+    background-color: lightslategray;
+    color: white;
+    font-weight: bolder;
+}
+
+
+select{
+    border-radius: 5px;
+}
+
+select:hover{
+    background-color: lightslategray;
+    color: white;
+    font-weight: bolder;
+}
+
+
+input[type=checkbox]{
+    border-radius: 5px;
+}
+
+input[type=date]{
+    border-radius: 5px;
+}
+
+input[type=date]:hover{
+    background-color: lightslategray;
+    color: white;
+    font-weight: bolder;
+}
+
+
+textarea{
+    border-radius: 5px;
+}
+
+textarea:hover{
+    background-color: lightslategray;
+    color: white;
+    font-weight: bolder;
+}
+
+
+input[type=submit]{
+    border-radius: 8px;
+    border: 2px solid slategray;
+    font-size: 1.5em;
+    background-color: snow;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-right: 10px;
+}
+
+input[type=submit]:hover{
+    background-color: steelblue;
+    font-size: 2em;
+}
+
+
+input[type=reset]{
+    border-radius: 8px;
+    border: 2px solid slategray;
+    font-size: 1.5em;
+    background-color: snow;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-right: 10px;
+    display: inline-block;
+    margin-left: 100px;
+}
+
+
+input[type=reset]:hover{
+    background-color: steelblue;
+    font-size: 2em;
+}
+
+
+#tabla{
+    padding-left: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 10px;
+    background-color: honeydew;
+    color: maroon;
+    margin-bottom: 20px;
+    text-align: center;
+   margin-left: 400px;
+   margin-right: 100px;
+   display: inline-block;
+   width: 50%;
+}
+
+table{
+    text-align: center;
+}
+
+th{
+    font-style: oblique;
+}
+
+th:hover{
+    background-color: darkred;
+    color: white;
+}
+
+
+.P{
+    background-color: tan;
+    text-align: center;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+}
+
+
+.P:hover{
+    background-color: burlywood;
+}
+
+
+.Voz{
+    background-color: cadetblue;
+    border-radius: 8px;
+    text-align: center;
+}
+
+td{
+    background-color: currentColor;
+    border-radius: 8px;
+}
+
+.Rec{
+    background-color: darkkhaki;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.Rec:hover{
+    background-color: darkolivegreen;
+    color: wheat;
+}
+
+.invi{
+    background-color: lightslategrey;
+    border-radius: 8px;
+    color: lightsteelblue;
+    text-align: center;
+}
+
+.invi:hover{
+    background-color: maroon;
+}
+
+.nina{
+    background-color: mistyrose;
+    text-align: center;
+}
+
+.paul{
+    background-color: moccasin;
+    text-align: center;
+
+}
+
+.ian{
+    background-color: palegoldenrod;
+    text-align: center;
+
+}
+
+.kat{
+    background-color: papayawhip;
+    text-align: center;
+
+}
+
+.candice{
+    background-color: peachpuff;
+    text-align: center;
+
+}
+
+.zach{
+    background-color: peru;
+    color: white;
+    text-align: center;
+
+}
+
+.steven{
+    background-color: powderblue;
+    text-align: center;
+
+}
+
+.michael{
+    background-color: bisque;
+    text-align: center;
+
+}
+
+.matt{
+    background-color: thistle;
+    text-align: center;
+
+}
+
+.joseph{
+    background-color: brown;
+    color: white;
+    text-align: center;
+
+}
+
+
+#tempo{
+    margin: 0 auto;
+    width: 90%;
+}
+
+.Temporadas{
+    width: 100%;
+   
+}
+
+
+.tem{
+    background-color: silver;
+}
+
+.tem:hover{
+    background-color: burlywood;
+    color: black;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.col{
+    background-color: bisque;
+    border-radius: 1px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+#marco{
+    margin: 0 auto;
+    width: 90%;
+    display: block;
+}
+
+
+#cuadros{
+    display: inline-block;
+}
+
+.perso{
+    border: 1px black solid;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: darkgray;
+    display: inline-block;
+    margin-right: 20px;
+    text-align: center;
+}
+
+
+.h4{
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+}
+
+.h4:hover{
+    font-size: 2em;
+}
+
+#cuadro{
+    margin: 0 auto;
+    width: 90%;
+    display: block;
+}
+
+#recuadros{
+    display: inline-block;
+}
+
+.texto{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
+}
+
+.PT{
+    font-weight: bolder;
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darksalmon;
+}
+
+.ST{
+    font-weight: bolder;
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: gray;
+}
+
+.TT{
+    font-weight: bolder;
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: indianred;
+}
+
+.CT{
+    font-weight: bolder;
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: maroon;
+}
+
+.QT{
+    font-weight: bolder;
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: lightcoral;
 }
