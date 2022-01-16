@@ -1,0 +1,50 @@
+.flex-container{
+    display: flex;
+    border: 3px solid red;
+   height: 400px;
+}
+
+.flex-container div{
+    color: white;
+    font-size: 2em;
+    padding: 5px;
+}
+.uno{
+    background-color: aquamarine;
+}
+
+.dos{
+    background-color: lightskyblue;
+}
+
+.tres{
+    background-color: purple;
+}
+
+.cuatro{
+    background-color: darkslateblue;
+}
+
+.cinco{
+    background-color: orange;
+}
+
+.seis{
+    background-color: orangered;
+}
+
+.siete{
+    background-color: darkred;
+}
+
+.ocho{
+    background-color: silver;
+}
+
+.nueve{
+    background-color: limegreen;
+}
+
+.diez{
+    background-color: darkcyan;
+}

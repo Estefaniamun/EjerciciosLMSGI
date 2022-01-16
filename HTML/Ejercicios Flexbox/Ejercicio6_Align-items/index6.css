@@ -1,0 +1,68 @@
+.flex-container{
+    display: flex;
+    border: 3px solid red;
+   
+    align-items: baseline;
+}
+
+
+.flex-container div{
+    color: white;
+    text-align: center;
+   
+   
+    
+
+}
+
+.uno{
+    background-color: aquamarine;
+    line-height: 8px;
+    font-size: 15px;
+   
+}
+
+.dos{
+    background-color: lightskyblue;
+    line-height: 20px;
+    font-size: 15px;
+}
+
+.tres{
+    background-color: purple;
+    line-height: 25px;
+
+}
+
+.cuatro{
+    background-color: darkslateblue;
+    line-height: 50px;
+   
+}
+
+.cinco{
+    background-color: orange;
+    line-height: 3px;
+    
+}
+
+.seis{
+    background-color: rgb(236, 113, 69);
+}
+
+.siete{
+    background-color: darkred;
+}
+
+.ocho{
+    background-color: silver;
+}
+
+.nueve{
+    background-color: limegreen;
+}
+
+.diez{
+    background-color: darkcyan;
+    line-height: 15px;
+}
