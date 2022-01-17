@@ -1,21 +1,32 @@
-
-
 body{
-    margin: 0%;
+    margin: 0;
 }
 
 .flex-container{
     display: flex;
     border: 3px solid red;
-    height: 99vh;
+   height: 98vh;
+   flex-wrap: wrap;
+   justify-content: center;
+  align-content: center;
+  
 }
+
 
 .flex-container div{
     color: white;
-    font-size: 2em;
+   font-size: 2em;
+   text-align: center;
+   width: 510px;
+  
+    
+
 }
+
 .uno{
     background-color: aquamarine;
+  
+   
 }
 
 .dos{
@@ -24,18 +35,21 @@ body{
 
 .tres{
     background-color: purple;
+
 }
 
 .cuatro{
     background-color: darkslateblue;
+   
 }
 
 .cinco{
     background-color: orange;
+    
 }
 
 .seis{
-    background-color: orangered;
+    background-color: rgb(236, 113, 69);
 }
 
 .siete{

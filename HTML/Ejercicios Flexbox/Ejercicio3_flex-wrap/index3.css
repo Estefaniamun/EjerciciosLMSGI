@@ -1,9 +1,13 @@
 
+body{
+    margin: 0;
+}
 .flex-container{
     display: flex;
     border: 3px solid red;
-    height: 400px;
+    height: 99vh;
     flex-wrap: wrap;
+    
 }
 
 

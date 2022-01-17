@@ -1,22 +1,32 @@
 body{
     margin: 0;
 }
+
 .flex-container{
     display: flex;
     border: 3px solid red;
-    flex-direction: column;
-    height: 99vh;
-   justify-content: space-between;
+   height: 98vh;
+   
+   
+  
 }
 
 
 .flex-container div{
     color: white;
-    text-align: center;
+   font-size: 2em;
+   text-align: center;
+  width: 200px;
+  
+    
+
 }
 
 .uno{
     background-color: aquamarine;
+  align-self: flex-start;
+  height: 100px;
+   
 }
 
 .dos{
@@ -25,32 +35,48 @@ body{
 
 .tres{
     background-color: purple;
+    align-self: flex-start;
+    height: 100px;
 }
 
 .cuatro{
     background-color: darkslateblue;
+    align-self: flex-start;
+    height: 100px;
 }
 
 .cinco{
     background-color: orange;
+    align-self: flex-start;
+    height: 100px;
 }
 
 .seis{
     background-color: rgb(236, 113, 69);
+    align-self: center;
+    height: 100px;
 }
 
 .siete{
     background-color: darkred;
+    align-self: flex-start;
+    height: 100px;
 }
 
 .ocho{
     background-color: silver;
+    align-self: flex-start;
+    height: 100px;
 }
 
 .nueve{
     background-color: limegreen;
+    align-self: flex-end;
+    height: 100px;
 }
 
 .diez{
     background-color: darkcyan;
+    align-self: flex-start;
+    height: 100px;
 }

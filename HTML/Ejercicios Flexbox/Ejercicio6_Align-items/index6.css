@@ -1,42 +1,41 @@
+body{
+    margin: 0;
+}
+
 .flex-container{
     display: flex;
     border: 3px solid red;
-   
+   height: 98vh;
     align-items: baseline;
 }
 
 
 .flex-container div{
-    color: white;
+    color: black;
     text-align: center;
-   
-   
-    
-
+   font-size: 1.5em;
 }
 
 .uno{
     background-color: aquamarine;
-    line-height: 8px;
-    font-size: 15px;
+    line-height: 0px;
    
 }
 
 .dos{
     background-color: lightskyblue;
-    line-height: 20px;
-    font-size: 15px;
+    line-height: 25px;
 }
 
 .tres{
     background-color: purple;
-    line-height: 25px;
+    line-height: 30px;
 
 }
 
 .cuatro{
     background-color: darkslateblue;
-    line-height: 50px;
+    line-height: 40px;
    
 }
 
@@ -64,5 +63,5 @@
 
 .diez{
     background-color: darkcyan;
-    line-height: 15px;
+    line-height: 20px;
 }
