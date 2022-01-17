@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+}
+
+.flex-container{
+    display: flex;
+    border: 3px solid red;
+  
+   
+   
+  
+}
+
+
+.flex-container div{
+    color: white;
+   font-size: 2em;
+   text-align: center;
+  
+  
+    
+
+}
+
+.uno{
+    background-color: aquamarine;
+  
+   
+}
+
+.dos{
+    background-color: lightskyblue;
+}
+
+.tres{
+    background-color: purple;
+   
+}
+
+.cuatro{
+    background-color: darkslateblue;
+   
+}
+
+.cinco{
+    background-color: rgb(241, 241, 54);
+   
+}
+
+.seis{
+    background-color: orange;
+   
+}
+
