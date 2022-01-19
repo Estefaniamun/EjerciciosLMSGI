@@ -5,63 +5,68 @@ body{
 .flex-container{
     display: flex;
     border: 3px solid red;
-   height: 98vh;
+    height: 99vh;
     align-items: baseline;
 }
 
 
 .flex-container div{
-    color: black;
+    color: white;
     text-align: center;
-   font-size: 1.5em;
+    padding: 6px;
 }
 
-.uno{
+#uno{
     background-color: aquamarine;
-    line-height: 0px;
+    font-size: 0.5em;
    
 }
 
-.dos{
+#dos{
     background-color: lightskyblue;
-    line-height: 25px;
-}
-
-.tres{
-    background-color: purple;
-    line-height: 30px;
-
-}
-
-.cuatro{
-    background-color: darkslateblue;
-    line-height: 40px;
+    font-size: 2em;
    
 }
 
-.cinco{
+#tres{
+    background-color: purple;
+    font-size: 3em;
+
+}
+
+#cuatro{
+    background-color: darkslateblue;
+    font-size: 5em;
+   
+}
+
+#cinco{
     background-color: orange;
-    line-height: 3px;
+    font-size: 0.1em;
     
 }
 
-.seis{
+#seis{
     background-color: rgb(236, 113, 69);
+    font-size: 2em;
 }
 
-.siete{
+#siete{
     background-color: darkred;
+    font-size: 2em;
 }
 
-.ocho{
+#ocho{
     background-color: silver;
+    font-size: 2em;
 }
 
-.nueve{
+#nueve{
     background-color: limegreen;
+    font-size: 2em;
 }
 
-.diez{
+#diez{
     background-color: darkcyan;
-    line-height: 20px;
+    font-size: 1.7em;
 }
