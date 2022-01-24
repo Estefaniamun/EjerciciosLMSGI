@@ -1,0 +1,69 @@
+html{
+    height: 100vh;
+}
+
+body{ 
+  margin: 0;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#portada{
+    background-color: rgba(255, 0, 0, 0.952);
+}
+.titulo{
+    color: white;
+    font-weight: bold;
+    padding-left: 60px;
+    font-size: 1.5em;
+    height: 10px;
+
+}
+
+.titulo:hover{
+ color: rgb(218, 55, 55);
+ cursor: pointer;
+}
+
+.flex-container2{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    
+}
+.publi{
+    display: inline-block;
+   
+   
+}
+
+.publi img{
+    width: 600px;
+}
+
+.publi img:hover{
+    cursor: pointer;
+}
+
+.foto{
+    margin-top: 10px;
+    margin-left: 150px;
+}
+
+.foto img{
+    width: 600px;
+}
+
+.publicidad{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.publicidad img{
+    width: 80%;
+}
