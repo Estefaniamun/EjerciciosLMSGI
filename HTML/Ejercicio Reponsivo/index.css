@@ -1,11 +1,10 @@
-html{
-    height: 100vh;
+html, body{
+    box-sizing: border-box;
 }
 
-body{ 
-  margin: 0;
+*, *::after, *::before{
+    box-sizing: inherit;
 }
-
 .flex-container{
     display: flex;
     flex-direction: column;
@@ -35,17 +34,11 @@ body{
     justify-content: center;
     
 }
-.publi{
-    display: inline-block;
-   
-   
-}
 
-.publi img{
-    width: 600px;
-}
 
-.publi img:hover{
+
+
+.publicidad img:hover{
     cursor: pointer;
 }
 
@@ -58,12 +51,62 @@ body{
     width: 600px;
 }
 
-.publicidad{
-    margin-top: 10px;
+
+#container{
     display: flex;
-    justify-content: center;
 }
 
-.publicidad img{
-    width: 80%;
+#izquierda{
+    flex: 66,666%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+#derecha{
+    flex: 33,333%;
+    display: flex;
+    flex-direction: column;
+}
+
+#noticia{
+    display: flex;
+}
+
+#noticia3{
+   flex: 33,333%;
+}
+#noticia4{
+    flex: 33,333%;
+}
+
+#noticia5{
+   flex: 33,333%;
+}
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+
+@media screen and (max-width: 992px){
+    .publicidad{
+        display: none;
+    }
+
+    .noticia, .foto {
+        width: 100%;
+    }
 }
