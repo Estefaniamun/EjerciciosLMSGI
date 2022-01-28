@@ -1,5 +1,6 @@
 html, body{
     box-sizing: border-box;
+    margin: 0;
 }
 
 *, *::after, *::before{
@@ -13,6 +14,7 @@ html, body{
 
 #portada{
     background-color: rgba(255, 0, 0, 0.952);
+    position: fixed top;
 }
 .titulo{
     color: white;
@@ -42,12 +44,12 @@ html, body{
     cursor: pointer;
 }
 
-.foto{
+#foto{
     margin-top: 10px;
     margin-left: 150px;
 }
 
-.foto img{
+#foto img{
     width: 600px;
 }
 
@@ -70,19 +72,13 @@ html, body{
     flex-direction: column;
 }
 
-#noticia{
+#Noticia{
     display: flex;
+    flex-wrap: wrap;
 }
 
-#noticia3{
-   flex: 33,333%;
-}
-#noticia4{
-    flex: 33,333%;
-}
-
-#noticia5{
-   flex: 33,333%;
+iframe{
+    margin-left: 10px;
 }
 
 /* For desktop: */
@@ -106,7 +102,11 @@ html, body{
         display: none;
     }
 
-    .noticia, .foto {
+    .noticia{
         width: 100%;
+    }
+
+    #Noticia{
+        flex-wrap: wrap;
     }
 }
