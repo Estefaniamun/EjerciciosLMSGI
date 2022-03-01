@@ -12,6 +12,10 @@
     <script src="https://kit.fontawesome.com/0921edd2e8.js" crossorigin="anonymous"></script>
 
     <style>
+        i{
+            width: 50px;
+        }
+
         i:hover {
             cursor: pointer;
             color: red;
@@ -30,6 +34,22 @@
             cursor: pointer;
             border-bottom: 2px solid orangered;
             transition-duration: 1.5s;
+        }
+
+        .ICONOS{
+            color: orangered;
+            width: 70px;
+            height: 100px;
+        }
+
+        .ICONOS:hover{
+            color: black;
+            transition-duration: 1s;
+        }
+
+        .enlaces:hover{
+            cursor: pointer;
+            color: gray !important;
         }
     </style>
 </head>
@@ -209,7 +229,36 @@
     </div>
 
     <footer>
-        
+        <div class="container-fluid text-center p-5 bg-dark justify-content-end mt-5">
+            <div>
+                <i class="ICONOS fa-brands fa-twitter p-3"></i>
+                <i class="ICONOS fa-brands fa-instagram p-3"></i>
+                <i class="ICONOS fa-brands fa-facebook-f p-3"></i>
+                <i class="ICONOS fa-brands fa-youtube p-3"></i>
+            </div>
+
+            <div class="mb-4">
+                <img src="img/logo-footer.png" width="300px" height="100px" alt="">
+            </div>
+
+            <div class="text-white">
+                <p>© EL MUNDO TODAY</p>
+                <div class="d-inline-block">
+                    <a href="#" style="text-decoration: none;" class="enlaces mx-3 text-white">POLÍTICA DE COOKIES</a>
+                    <a href="#" style="text-decoration: none;" class="enlaces mx-3 text-white">AVISO LEGAL Y POLÍTICA DE PRIVACIDAD</a>
+                    <a href="#" style="text-decoration: none;" class="enlaces mx-3 text-white">CONTACTO Y PUBLICIDAD</a>
+                    <a href="#" style="text-decoration: none;" class="enlaces mx-3 text-white">TIENDA</a>
+                </div>
+                <div class="mt-5">
+                    <p>CON EL APOYO TECNOLÓGICO DE</p>
+                </div>
+                <div>
+                    <img src="img/icm-logo-1.png" width="100px" height="95px" alt="">
+                </div>
+            </div>
+
+            
+
     </footer>
 </body>
 
