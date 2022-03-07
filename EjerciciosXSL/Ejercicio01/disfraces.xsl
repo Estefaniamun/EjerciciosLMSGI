@@ -7,19 +7,11 @@
                 <title>Disfraces</title>
             </head>
             <body>
-                <xsl:apply-templates/>
+                <h1>El león hace: <xsl:value-of select="leon"/></h1>
+                <h1>El león hace: <xsl:value-of select="peppapig"/></h1>
+                <h1>El león hace: <xsl:value-of select="caballitodemar"/></h1>
             </body>
         </html>
     </xsl:template>
-    <xsl:template match="leon">
-        <h1>El león hace: <xsl:value-of select="."/></h1>
-    </xsl:template>
-    
-    <xsl:template match="peppapig">
-        <h1>Peppa Pig hace: <xsl:value-of select="."/></h1>
-    </xsl:template> 
-    <xsl:template match="caballitodemar">
-        <h1>El caballito de mar hace: <xsl:value-of select="."/></h1>
    
-    </xsl:template>
 </xsl:stylesheet>
