@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="examen1DAW.xsl"?>
+
+<primerDia1DAW>
+	<horario>
+		<dia desc="Lunes">
+			<hora orden="1">ENT DES</hora>
+			<hora orden="2">PROG</hora>
+			<hora orden="3">PROG</hora>
+			<hora orden="4">LMSGI</hora>
+			<hora orden="5">SIST INF</hora>
+			<hora orden="6">SIST INF</hora>
+		</dia>	
+		<dia desc="Martes">
+			<hora orden="1">FOL</hora>
+			<hora orden="2">FOL</hora>
+			<hora orden="3">LMSGI</hora>
+			<hora orden="4">ENT DES</hora>
+			<hora orden="5">BBDD</hora>
+			<hora orden="6">SIST INF</hora>
+		</dia>	
+		<dia desc="Miércoles">
+			<hora orden="1">BBDD</hora>
+			<hora orden="3">ENT DES</hora>
+			<hora orden="6">PROG</hora>
+			<hora orden="4">FOL</hora>
+			<hora orden="2">BBDD</hora>
+			<hora orden="5">PROG</hora>
+		</dia>	
+		<dia desc="Jueves">
+			<hora orden="4">PROG</hora>
+			<hora orden="1">BBDD</hora>
+			<hora orden="2">SIST INF</hora>
+			<hora orden="5">LMSGI</hora>
+			<hora orden="6">LMSGI</hora>
+			<hora orden="3">PROG</hora>
+		</dia>	
+		<dia desc="Viernes">
+			<hora orden="1">SIST INF</hora>
+			<hora orden="3">BBDD</hora>
+			<hora orden="4">BBDD</hora>
+			<hora orden="2">SIST INF</hora>
+			<hora orden="5">PROG</hora>
+			<hora orden="6">PROG</hora>
+		</dia>	
+	</horario>
+	<estructuraAula>
+		<bloque x="2" y="3" tipo="puerta"/>
+		<bloque x="2" y="10" tipo="puerta"/>
+		<bloque x="1" y="4" tipo="pared"/>
+		<bloque x="1" y="5" tipo="pared"/>
+		<bloque x="1" y="6" tipo="pared"/>
+		<bloque x="1" y="7" tipo="pared"/>
+		<bloque x="1" y="8" tipo="pared"/>
+		<bloque x="1" y="9" tipo="pared"/>
+		<bloque x="2" y="1" tipo="pared"/>
+		<bloque x="2" y="2" tipo="pared"/>
+		<bloque x="2" y="11" tipo="pared"/>
+		<bloque x="3" y="1" tipo="pared"/>
+		<bloque x="3" y="11" tipo="pared"/>
+		<bloque x="4" y="1" tipo="pared"/>
+		<bloque x="4" y="11" tipo="pared"/>
+		<bloque x="5" y="1" tipo="pared"/>
+		<bloque x="5" y="11" tipo="pared"/>
+		<bloque x="6" y="1" tipo="pared"/>
+		<bloque x="6" y="11" tipo="pared"/>
+		<bloque x="7" y="1" tipo="pared"/>
+		<bloque x="7" y="11" tipo="pared"/>
+		<bloque x="8" y="1" tipo="pared"/>
+		<bloque x="8" y="11" tipo="pared"/>
+		<bloque x="8" y="2" tipo="ventana"/>
+		<bloque x="8" y="3" tipo="ventana"/>
+		<bloque x="8" y="4" tipo="ventana"/>
+		<bloque x="8" y="5" tipo="ventana"/>
+		<bloque x="8" y="6" tipo="ventana"/>
+		<bloque x="8" y="7" tipo="ventana"/>
+		<bloque x="8" y="8" tipo="ventana"/>
+		<bloque x="8" y="9" tipo="ventana"/>
+		<bloque x="8" y="10" tipo="ventana"/>
+		<color tipo="puerta">ff543a</color>
+		<color tipo="pared">fccf53</color>
+		<color tipo="ventana">bfd7ff</color>
+	</estructuraAula>
+	<alumnado>
+		<alumno sexo="H" x="2" y="4">Luis</alumno>
+		<alumno sexo="M" x="2" y="5">Marta</alumno>
+		<alumno sexo="M" x="2" y="6">Isabel</alumno>
+		<alumno sexo="H" x="2" y="7">Tomás</alumno>
+		<alumno sexo="H" x="2" y="8">Pablo</alumno>
+		<alumno sexo="H" x="2" y="9">Alfredo</alumno>
+		<alumno sexo="M" x="4" y="2">Natalia</alumno>
+		<alumno sexo="M" x="4" y="3">Mercedes</alumno>
+		<alumno sexo="H" x="4" y="4">Justino</alumno>
+		<alumno sexo="M" x="4" y="5">Paola</alumno>
+		<alumno sexo="M" x="4" y="6">Daniela</alumno>
+		<alumno sexo="H" x="4" y="7">Adolfo</alumno>
+		<alumno sexo="H" x="4" y="8">Alfonso</alumno>
+		<alumno sexo="H" x="4" y="9">Juan Pablo</alumno>
+		<alumno sexo="M" x="5" y="2">Laura</alumno>
+		<alumno sexo="M" x="5" y="3">Araceli</alumno>
+		<alumno sexo="H" x="5" y="4">Jonathan</alumno>
+		<alumno sexo="M" x="5" y="5">Alma</alumno>
+		<alumno sexo="H" x="5" y="6">Gorka</alumno>
+		<alumno sexo="M" x="5" y="7">Gabriela</alumno>
+		<alumno sexo="M" x="5" y="8">Rocío</alumno>
+		<alumno sexo="M" x="5" y="9">Ana</alumno>
+		<alumno sexo="H" x="7" y="2">Jordi</alumno>
+		<alumno sexo="H" x="7" y="3">Willian</alumno>
+		<alumno sexo="H" x="7" y="4">Jeremi</alumno>
+		<alumno sexo="M" x="7" y="5">Valeria</alumno>
+		<alumno sexo="M" x="7" y="6">Gema</alumno>
+		<alumno sexo="H" x="7" y="7">Genaro</alumno>
+		<alumno sexo="M" x="7" y="8">Lourdes</alumno>
+		<alumno sexo="H" x="7" y="9">Ramiro</alumno>
+		<alumno sexo="M" x="7" y="10">Rafa</alumno>
+		<imagen sexo="M">http://webdidacticarafaelmunoz.appspot.com/lmsgi/ejercicios-cap5/examen/2018-enero/recursos/miiMujer.png</imagen>
+		<imagen sexo="H">http://webdidacticarafaelmunoz.appspot.com/lmsgi/ejercicios-cap5/examen/2018-enero/recursos/miiHombre.png</imagen>
+	</alumnado>
+</primerDia1DAW>

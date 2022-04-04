@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="2b.xsl" type="text/xsl"?>
+
+<juegoTanques>
+  <jugadasDescritas>
+    <jugada jugador="1" desc="Comienzo del juego moviendo hacía arriba"></jugada>
+    <jugada jugador="2" desc="Comienzo del juego moviendo hacía abajo"></jugada>
+    <jugada jugador="1" desc="Movimiento hacía arriba"></jugada>
+    <jugada jugador="2" desc="Movimiento hacía abajo"></jugada>
+    <jugada jugador="1" desc="Movimiento hacía arriba"></jugada>
+    <jugada jugador="2" desc="Movimiento hacía abajo"></jugada>
+    <jugada jugador="1" desc="Movimiento hacía arriba"></jugada>
+    <jugada jugador="2" desc="Movimiento hacía abajo"></jugada>
+    <jugada jugador="1" desc="Movimiento hacía derecha"></jugada>
+    <jugada jugador="2" desc="Movimiento hacía izquierda"></jugada>
+  </jugadasDescritas>
+  <tanques>
+    <imagenTanque jugador="1">http://www.webdidacticarafaelmunoz.appspot.com/lmsgi/image/tanque1.jpg</imagenTanque>
+    <imagenTanque jugador="2">http://www.webdidacticarafaelmunoz.appspot.com/lmsgi/image/tanque2.jpg</imagenTanque>
+  </tanques>
+<jugadasGraficas>
+    <jugadaGrafica>
+      <posicion y="5" x="1" tipo="tanque" jugador="1"/>
+      <posicion y="4" x="8" tipo="tanque" jugador="2"/>
+      <posicion y="3" x="2" tipo="pared"/>
+      <posicion y="3" x="3" tipo="pared"/>
+      <posicion y="4" x="3" tipo="pared"/>
+      <posicion y="5" x="3" tipo="pared"/>
+      <posicion y="6" x="3" tipo="pared"/>
+      <posicion y="3" x="6" tipo="pared"/>
+      <posicion y="4" x="6" tipo="pared"/>
+      <posicion y="5" x="6" tipo="pared"/>
+      <posicion y="6" x="6" tipo="pared"/>
+      <posicion y="6" x="7" tipo="pared"/>
+    </jugadaGrafica>
+    <jugadaGrafica>
+      <posicion y="4" x="1" tipo="tanque" jugador="1"/>
+      <posicion y="5" x="8" tipo="tanque" jugador="2"/>
+      <posicion y="3" x="2" tipo="pared"/>
+      <posicion y="3" x="3" tipo="pared"/>
+      <posicion y="4" x="3" tipo="pared"/>
+      <posicion y="5" x="3" tipo="pared"/>
+      <posicion y="6" x="3" tipo="pared"/>
+      <posicion y="3" x="6" tipo="pared"/>
+      <posicion y="4" x="6" tipo="pared"/>
+      <posicion y="5" x="6" tipo="pared"/>
+      <posicion y="6" x="6" tipo="pared"/>
+      <posicion y="6" x="7" tipo="pared"/>
+    </jugadaGrafica>
+    <jugadaGrafica>
+      <posicion y="3" x="1" tipo="tanque" jugador="1"/>
+      <posicion y="6" x="8" tipo="tanque" jugador="2"/>
+      <posicion y="3" x="2" tipo="pared"/>
+      <posicion y="3" x="3" tipo="pared"/>
+      <posicion y="4" x="3" tipo="pared"/>
+      <posicion y="5" x="3" tipo="pared"/>
+      <posicion y="6" x="3" tipo="pared"/>
+      <posicion y="3" x="6" tipo="pared"/>
+      <posicion y="4" x="6" tipo="pared"/>
+      <posicion y="5" x="6" tipo="pared"/>
+      <posicion y="6" x="6" tipo="pared"/>
+      <posicion y="6" x="7" tipo="pared"/>
+    </jugadaGrafica>
+    <jugadaGrafica>
+      <posicion y="2" x="1" tipo="tanque" jugador="1"/>
+      <posicion y="7" x="8" tipo="tanque" jugador="2"/>
+      <posicion y="3" x="2" tipo="pared"/>
+      <posicion y="3" x="3" tipo="pared"/>
+      <posicion y="4" x="3" tipo="pared"/>
+      <posicion y="5" x="3" tipo="pared"/>
+      <posicion y="6" x="3" tipo="pared"/>
+      <posicion y="3" x="6" tipo="pared"/>
+      <posicion y="4" x="6" tipo="pared"/>
+      <posicion y="5" x="6" tipo="pared"/>
+      <posicion y="6" x="6" tipo="pared"/>
+      <posicion y="6" x="7" tipo="pared"/>
+    </jugadaGrafica>
+    <jugadaGrafica>
+      <posicion y="2" x="2" tipo="tanque" jugador="1"/>
+      <posicion y="7" x="7" tipo="tanque" jugador="2"/>
+      <posicion y="3" x="2" tipo="pared"/>
+      <posicion y="3" x="3" tipo="pared"/>
+      <posicion y="4" x="3" tipo="pared"/>
+      <posicion y="5" x="3" tipo="pared"/>
+      <posicion y="6" x="3" tipo="pared"/>
+      <posicion y="3" x="6" tipo="pared"/>
+      <posicion y="4" x="6" tipo="pared"/>
+      <posicion y="5" x="6" tipo="pared"/>
+      <posicion y="6" x="6" tipo="pared"/>
+      <posicion y="6" x="7" tipo="pared"/>
+    </jugadaGrafica>
+  </jugadasGraficas>
+</juegoTanques>
