@@ -16,50 +16,8 @@
                         <xsl:value-of select="/partidoBaloncesto/equipo[@tipo = 'Visitante']/@nombre"/></h1>
                 </div>
                 
-                
-                <table border="1" width="100%">
-                    <tr>
-                        <th>Equipo</th>
-                        <th>Jugador</th>
-                        <th>Dorsal</th>
-                        <th>Apodo</th>
-                        <th>Puntos</th>
-                        <th>Rebotes</th>
-                        <th>Asistencias</th>
-                    </tr>
-                   <xsl:for-each select="/partidoBaloncesto/equipo">
-                        <xsl:for-each select="jugador">
-                            <xsl:sort select= "@nombre"/>
-                            <tr>
-                                <xsl:attribute name="style">
-                                <xsl:choose>
-                                    <xsl:when test="../@tipo = 'Local'">
-                                        <xsl:if test="position() mod 2 = 1">
-                                            background-color: #d8e7ff;
-                                        </xsl:if>
-                                       
-                                    </xsl:when>
-                                    <xsl:when test="../@tipo = 'Visitante'">
-                                        <xsl:if test="position() mod 2 = 1">
-                                            background-color: #d8ffcc;
-                                        </xsl:if>
-                                      
-                                    </xsl:when>
-                                </xsl:choose>
-                                
-                                </xsl:attribute>
-                                <td><img src="{../@imagen}"></img></td>
-                                <td><xsl:value-of select="@nombre"/></td>
-                                <td><xsl:value-of select="@dorsal"/></td>
-                                <td><xsl:value-of select="@apodo"/></td>
-                                <td><xsl:value-of select="@puntos"/></td>
-                                <td><xsl:value-of select="@rebotes"/></td>
-                                <td><xsl:value-of select="@asistencias"/></td>
-                            </tr>
-                        </xsl:for-each>
-                    
-                   </xsl:for-each>
-                </table>
+                <xsl:call-template name="TablaPrimera"></xsl:call-template>
+               
                 
             </body>
         </html>
@@ -71,12 +29,64 @@
         
     </xsl:template>
     
-    <xsl:template name="jugadores">
-        <tr>
-        <xsl:for-each select="/partidoBaloncesto/equipo/jugador">
-            <td></td>
-        </xsl:for-each>
-        </tr>
+    <xsl:template name="TablaPrimera">
+        <table border="1" width="100%">
+            <tr>
+                <th>Equipo</th>
+                <th>Jugador</th>
+                <th>Dorsal</th>
+                <th>Apodo</th>
+                <th>Puntos</th>
+                <th>Rebotes</th>
+                <th>Asistencias</th>
+            </tr>
+            <xsl:for-each select="/partidoBaloncesto/equipo">
+                <xsl:for-each select="jugador">
+                    <xsl:sort select= "@nombre"/>
+                    <tr>
+                        <xsl:attribute name="style">
+                            <xsl:choose>
+                                <xsl:when test="../@tipo = 'Local'">
+                                    <xsl:if test="position() mod 2 = 1">
+                                        background-color: #d8e7ff;
+                                    </xsl:if>
+                                    
+                                </xsl:when>
+                                <xsl:when test="../@tipo = 'Visitante'">
+                                    <xsl:if test="position() mod 2 = 1">
+                                        background-color: #d8ffcc;
+                                    </xsl:if>
+                                    
+                                </xsl:when>
+                            </xsl:choose>
+                            
+                        </xsl:attribute>
+                        <td><img src="{../@imagen}"></img></td>
+                        <td><xsl:value-of select="@nombre"/></td>
+                        <td><xsl:value-of select="@dorsal"/></td>
+                        <td><xsl:value-of select="@apodo"/></td>
+                        <td><xsl:value-of select="@puntos"/></td>
+                        <td><xsl:value-of select="@rebotes"/></td>
+                        <td><xsl:value-of select="@asistencias"/></td>
+                    </tr>
+                </xsl:for-each>
+                
+            </xsl:for-each>
+        </table>
+    </xsl:template>
+    
+    <xsl:template name="TablaSegunda">
+        <table border="1" width="100%">
+            <tr>
+                <th>Tiempo</th>
+                <th>Jugador</th>
+                <th>Apodo</th>
+                <th>Descripción</th>
+                <th>Icono</th>
+            </tr>
+            
+                
+        </table>
     </xsl:template>
     <xsl:template name="css">
        <style>
