@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="partidoBaloncesto.xsl"?>
+
+<partidoBaloncesto>
+	<equipo tipo="Local" nombre="Baloncesto Lucena 2" imagen="recursos/cbcLucena.png">
+		<jugador nombre="Juan" dorsal="8" apodo="SuperJuan" puntos="14" rebotes="3" asistencias="8" posicionX="2" posicionY="1"/>
+		<jugador nombre="Tania" dorsal="87" apodo="WonderWoman" puntos="18" rebotes="5" asistencias="2" posicionX="1" posicionY="2"/>
+		<jugador nombre="Antonio" dorsal="23" apodo="Araña" puntos="7" rebotes="4" asistencias="2" posicionX="4" posicionY="2"/>
+		<jugador nombre="Jaime" dorsal="32" apodo="Arquero" puntos="13" rebotes="1" asistencias="7" posicionX="5" posicionY="4"/>
+		<jugador nombre="Esther" dorsal="51" apodo="Máquina" puntos="9" rebotes="6" asistencias="6" posicionX="3" posicionY="5"/>
+	</equipo>
+	<equipo tipo="Visitante" nombre="Unicaja Baloncesto" imagen="recursos/Unicaja_CB.png">
+		<jugador nombre="Silvia" dorsal="17" apodo="8 brazos" puntos="8" rebotes="2" asistencias="7" posicionX="7" posicionY="1"/>
+		<jugador nombre="Mar" dorsal="85" apodo="Muralla" puntos="8" rebotes="9" asistencias="3" posicionX="6" posicionY="3"/>
+		<jugador nombre="Ainhoa" dorsal="61" apodo="Cara de niña" puntos="15" rebotes="4" asistencias="3" posicionX="10" posicionY="3"/>
+		<jugador nombre="Luis" dorsal="74" apodo="Cañonero" puntos="12" rebotes="4" asistencias="5" posicionX="8" posicionY="4"/>
+		<jugador nombre="Chicho" dorsal="4" apodo="Capi" puntos="14" rebotes="6" asistencias="4" posicionX="9" posicionY="5"/>
+	</equipo>
+	<historico>
+		<entrada tiempo="0:12" jugador="Jaime" tipo="canasta">Entrada a canasta y falta personal</entrada>
+		<entrada tiempo="0:33" jugador="Ainhoa" tipo="canasta">Triple</entrada>
+		<entrada tiempo="0:58" jugador="Antonio" tipo="falta">Falta personal</entrada>
+		<entrada tiempo="1:00" jugador="Chicho" tipo="canasta">Dos tiros libres anotados</entrada>
+		<entrada tiempo="1:18" jugador="Mar" tipo="falta">Falta personal</entrada>
+		<entrada tiempo="2:20" jugador="Esther" tipo="canasta">Triple</entrada>
+		<entrada tiempo="2:33" jugador="Juan" tipo="canasta">2 puntos</entrada>
+		<imagen tipo="canasta">recursos/canasta.jpg</imagen>
+		<imagen tipo="falta">recursos/falta.jpg</imagen>
+	</historico>
+	<pista>recursos/pista.jpg</pista>
+</partidoBaloncesto>

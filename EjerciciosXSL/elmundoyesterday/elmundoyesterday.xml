@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="a.xsl" type="text/xsl"?>
+<periodico nombre="El mundo yesterday" logo="http://webdidacticarafaelmunoz.appspot.com/lmsgi/ejercicios-cap5/examen/2015-enero/recursos/el-mundo-yesterday.jpg">
+    <menu>
+        <enlace href="#">Nacional</enlace>
+        <enlace href="#">Internacional</enlace>
+        <enlace href="#">Sociedad</enlace>
+        <enlace href="#">Cultura</enlace>
+        <enlace href="#">Ciencia</enlace>
+        <enlace href="#">Deportes</enlace>
+    </menu>
+    <noticias>
+        <noticia dobleAncho="s" fecha="22 de febrero" comentarios="10" imagen="http://webdidacticarafaelmunoz.appspot.com/lmsgi/ejercicios-cap5/examen/2015-enero/recursos/badajoz.jpg">
+            <titular>Señora de Badajoz confunde a todos los hombres negros con Morgan Freeman</titular>
+            <subtitular>"Está en todos los saraos este hombre" - dice la señora</subtitular>
+        </noticia>
+        <noticia dobleAncho="n" fecha="21 de febrero" comentarios="13" imagen="http://webdidacticarafaelmunoz.appspot.com/lmsgi/ejercicios-cap5/examen/2015-enero/recursos/umagumma.jpg">
+            <titular>El Observatorio de la Mujer controlará a Uma Thurman vía satélite para detectar el menor cambio en su aspecto</titular>
+            <subtitular>El rostro de la actriz ya es la primera preocupación de los españoles por encima del paro y el terrorismo</subtitular>
+        </noticia>
+        <noticia dobleAncho="n" fecha="20 de febrero" comentarios="20" imagen="http://webdidacticarafaelmunoz.appspot.com/lmsgi/ejercicios-cap5/examen/2015-enero/recursos/uvasgigantes.jpg">
+            <titular>Aumenta la producción de uvas gigantes para esas botellas de vino gigantes que hay en los restaurantes</titular>
+            <subtitular>Los decantadores son hormigoneras</subtitular>
+        </noticia>
+        <noticia dobleAncho="s" fecha="19 de febrero" comentarios="20" imagen="http://webdidacticarafaelmunoz.appspot.com/lmsgi/ejercicios-cap5/examen/2015-enero/recursos/transplante.png">
+            <titular>Un cirujano interrumpe un transplante de corazón para ver un videotutorial sobre transplantes de corazón</titular>
+            <subtitular>También buscó trucos en Youtube para comunicar el fallecimiento</subtitular>
+        </noticia>
+    </noticias>
+    <publicidad>
+        <anuncio orden="2" imagen="http://webdidacticarafaelmunoz.appspot.com/lmsgi/ejercicios-cap5/examen/2015-enero/recursos/publi-arriba.png"/>
+        <anuncio orden="1" imagen="http://webdidacticarafaelmunoz.appspot.com/lmsgi/ejercicios-cap5/examen/2015-enero/recursos/publi-sanitas.png"/>
+        <anuncio orden="3" imagen="http://webdidacticarafaelmunoz.appspot.com/lmsgi/ejercicios-cap5/examen/2015-enero/recursos/publi-sofa.png"/>
+    </publicidad>
+</periodico>
