@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="batmanvssuperman.xsl" type="text/xsl"?>
+
+<cine nombre="ArteOcho Lucena">
+    <titulo estreno="23/03/2016" nombre="Batman vs Superman: El Amanecer de la Justicia">
+        <imagen>http://www.webdidacticarafaelmunoz.appspot.com/lmsgi/image/batmanvssumperman/Batman-Vs-Superman.jpg</imagen>
+    </titulo>
+    <sesiones> 
+        <sesion hora="16:30">
+            <ocupado fila="2" asiento="3"/>
+            <ocupado fila="2" asiento="4"/>
+            <ocupado fila="4" asiento="1"/>
+        </sesion>
+        <sesion hora="18:30">
+            <ocupado fila="3" asiento="2"/>
+            <ocupado fila="3" asiento="3"/>
+            <ocupado fila="1" asiento="2"/>
+            <ocupado fila="1" asiento="3"/>
+        </sesion>
+        <sesion hora="20:30">
+            <ocupado fila="2" asiento="2"/>
+            <ocupado fila="2" asiento="3"/>
+            <ocupado fila="4" asiento="2"/>
+            <ocupado fila="4" asiento="3"/>
+        </sesion>
+    </sesiones>   
+    <cartelera>
+      <pelicula nombre="13 horas" id="13Horas"/>
+      <pelicula nombre="100 años de perdón" id="100AniosPerdon"/>
+      <pelicula nombre="Deadpool" id="Deadpool"/>
+    </cartelera>
+    <imagenes>
+        <imagen id="libre">http://www.webdidacticarafaelmunoz.appspot.com/lmsgi/image/batmanvssumperman/libre.png</imagen>
+        <imagen id="ocupado">http://www.webdidacticarafaelmunoz.appspot.com/lmsgi/image/batmanvssumperman/ocupado.png</imagen>
+        <imagen id="13Horas">http://www.webdidacticarafaelmunoz.appspot.com/lmsgi/image/batmanvssumperman/13horas.jpg</imagen>
+        <imagen id="100AniosPerdon">http://www.webdidacticarafaelmunoz.appspot.com/lmsgi/image/batmanvssumperman/cienanosdeperdon.jpg</imagen>
+        <imagen id="Deadpool">http://www.webdidacticarafaelmunoz.appspot.com/lmsgi/image/batmanvssumperman/deadpoola.jpg</imagen>
+    </imagenes>    
+</cine>
