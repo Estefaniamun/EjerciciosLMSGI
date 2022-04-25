@@ -28,7 +28,7 @@
 
     </xsl:template>
 
-<!-- Tabla Jugadores -->
+                    <!-- Tabla Jugadores -->
     <xsl:template name="TablaPrimera">
         <table border="1" width="100%">
             <tr>
@@ -84,7 +84,8 @@
             </xsl:for-each>
         </table>
     </xsl:template>
-<!-- Pista -->
+    
+                    <!-- Pista -->
     <xsl:template name="cancha">
         <xsl:call-template name="css"/>
         <table width="1000px" class="pista" align="center">
@@ -157,7 +158,7 @@
 
 
 
- <!-- Segunda Tabla -->
+                 <!-- Segunda Tabla -->
 
     <xsl:template name="TablaSegunda">
         <table border="1" width="50%" align="center">
