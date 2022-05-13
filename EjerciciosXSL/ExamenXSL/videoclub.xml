@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="videoclub.xsl" ?>
+<videoclub nombre="VideoAlquiler Muñoz">
+    <videojuegos>
+        <videoJuego order="4" plataforma="XBox One" alquilerDiario="1.5 €" pegi="18" x="5" y="1">Assasins Creed
+            <idImg valor="juegoAssasins"/>
+        </videoJuego>
+        <videoJuego order="3" plataforma="Playstation 4" alquilerDiario="1.5 €" pegi="18" x="4" y="4" idimg="juegoFarCry">Far Cry Primal
+            <idImg valor="juegoFarCry"/>
+        </videoJuego>
+        <videoJuego order="1" plataforma="Playstation 4" alquilerDiario="1.8 €" pegi="25" x="3" y="4" idimg="juegoGodOfWar">God of War 4
+            <idImg valor="juegoGodOfWar"/>
+        </videoJuego>
+        <videoJuego order="2" plataforma="Wii U" alquilerDiario="1.5 €" pegi="18" x="2" y="5" idimg="juegoZelda">Zelda: Breath of the Wild
+            <idImg valor="juegoZelda"/>
+        </videoJuego>
+    </videojuegos>
+    <Peliculas>
+        <pelicula order="1" pegi="18" duracionEnMinutos="157" alquilerDiario="1.5 €" idimg="peliIt" titulo="It">
+            <coordenadas x="2" y="1" />    
+        </pelicula>
+        <pelicula order="2" pegi="7" duracionEnMinutos="142" alquilerDiario="1.7 €" idimg="peliDespertar" titulo="El despertar de la fuerza">
+            <coordenadas x="1" y="2" /> 
+        </pelicula>
+        <pelicula order="4" pegi="7" duracionEnMinutos="137" alquilerDiario="1.2 €" idimg="peliVengadores" titulo="Los Vengadores">
+            <coordenadas x="2" y="3" /> 
+        </pelicula>
+        <pelicula order="5" pegi="7" duracionEnMinutos="139" alquilerDiario="1.5 €" idimg="peliUltron" titulo="La era de Ultrón">
+            <coordenadas x="1" y="3" /> 
+        </pelicula>
+        <pelicula order="3" pegi="7" duracionEnMinutos="150" alquilerDiario="235.5 €" idimg="peliInfinityWar" titulo="Infinity War I">
+            <coordenadas x="3" y="3" /> 
+        </pelicula>
+    </Peliculas>
+    <bancoDeImagenes>
+        <imagen identificador="peliIt">http://webdidacticarafaelmunoz.appspot.com/lmsgi/ejercicios-cap5/examen/2018-febrero/it.jpg</imagen>    
+        <imagen identificador="peliDespertar">http://webdidacticarafaelmunoz.appspot.com/lmsgi/ejercicios-cap5/examen/2018-febrero/the-force-awakens.jpg</imagen>    
+        <imagen identificador="peliVengadores">http://webdidacticarafaelmunoz.appspot.com/lmsgi/ejercicios-cap5/examen/2018-febrero/vengadores-marvel.jpg</imagen>    
+        <imagen identificador="peliUltron">http://webdidacticarafaelmunoz.appspot.com/lmsgi/ejercicios-cap5/examen/2018-febrero/ultron.jpg</imagen>    
+        <imagen identificador="peliInfinityWar">http://webdidacticarafaelmunoz.appspot.com/lmsgi/ejercicios-cap5/examen/2018-febrero/infinityWar.jpg</imagen>    
+        <imagen identificador="juegoAssasins">http://webdidacticarafaelmunoz.appspot.com/lmsgi/ejercicios-cap5/examen/2018-febrero/assasins.jpg</imagen>    
+        <imagen identificador="juegoFarCry">http://webdidacticarafaelmunoz.appspot.com/lmsgi/ejercicios-cap5/examen/2018-febrero/far-cry-primal.png</imagen>    
+        <imagen identificador="juegoGodOfWar">http://webdidacticarafaelmunoz.appspot.com/lmsgi/ejercicios-cap5/examen/2018-febrero/god_of_war_ps4.jpg</imagen>    
+        <imagen identificador="juegoZelda">http://webdidacticarafaelmunoz.appspot.com/lmsgi/ejercicios-cap5/examen/2018-febrero/Zelda.jpg</imagen> 
+        <color identificador="peliculas">fffcad</color>
+        <color identificador="videojuegos">aeffa8</color>
+    </bancoDeImagenes>
+</videoclub>

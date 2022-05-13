@@ -68,7 +68,7 @@
             
             <xsl:for-each select="alumnado/alumno">
                 
-                <xsl:if test="@x = $x and @y = $y">
+                <xsl:if test="@x = $xf and @y = $y">
                     <xsl:choose>
                         <xsl:when test="@sexo = 'H'">
                             <xsl:attribute name="style">background: purple;</xsl:attribute>
